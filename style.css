@@ -309,6 +309,37 @@ select {
 .bottone.chiaro { background: var(--carta); color: var(--bordeaux); border-color: var(--carta); }
 .bottone.chiaro:hover { box-shadow: 5px 5px 0 var(--blu); }
 
+/* ---------- Newsletter ---------- */
+.newsletter { background: var(--blu); color: var(--bianco); position: relative; overflow: hidden; }
+.newsletter[hidden] { display: none; }
+.newsletter::after {
+  content: ""; position: absolute; inset: 0; background: var(--bordeaux); opacity: 0.6; pointer-events: none;
+  clip-path: polygon(100% 45%, 84% 64%, 90% 66%, 72% 100%, 100% 100%);
+}
+.newsletter-griglia { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
+.newsletter h2 {
+  font-family: var(--display); text-transform: uppercase; font-size: clamp(38px, 5.5vw, 60px); line-height: 0.98; margin: 0 0 18px;
+}
+.newsletter-testo { color: #dfe4ee; max-width: 52ch; margin: 0 0 26px; }
+.newsletter-testo strong { color: var(--bianco); }
+.newsletter-nota { font-size: 13px; color: var(--pietra); margin: 16px 0 0; }
+.newsletter-nota a { color: var(--pietra); }
+.anteprima-mail { display: grid; gap: 14px; }
+.mail {
+  background: var(--carta); color: var(--inchiostro); padding: 16px 18px 16px 22px; display: grid; gap: 3px;
+  border-left: 6px solid var(--bordeaux-vivo); box-shadow: 8px 8px 0 rgb(0 0 0 / 0.35);
+}
+.mail:nth-child(1) { transform: rotate(-1.5deg); }
+.mail:nth-child(2) { transform: rotate(1deg) translateX(24px); border-left-color: var(--vinta); }
+.mail-da { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--tenue); font-weight: 600; }
+.mail strong { font-family: var(--display); font-size: 21px; font-weight: 600; text-transform: uppercase; line-height: 1.15; }
+.mail span:last-child { font-size: 14px; color: var(--tenue); }
+.menu-voci li[hidden] { display: none; }
+@media (max-width: 900px) {
+  .newsletter-griglia { grid-template-columns: 1fr; gap: 36px; }
+  .mail:nth-child(2) { transform: rotate(1deg); margin-right: 8px; }
+}
+
 /* ---------- Sponsor ---------- */
 .intro-sponsor { margin: -8px 0 24px; color: var(--tenue); }
 .sponsor { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--inchiostro); border-left: 1px solid var(--riga); }

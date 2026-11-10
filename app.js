@@ -7,6 +7,18 @@
   var anni = $("anni-storia");
   if (anni) anni.textContent = new Date().getFullYear() - 1968;
 
+  // ---------- Newsletter: visibile solo quando c'è il link del modulo ----------
+  (function () {
+    var sez = $("newsletter");
+    if (!sez) return;
+    var link = $("bottone-iscrizione").getAttribute("href") || "";
+    if (/LINK-ISCRIZIONE/.test(link) || !/^https?:/.test(link)) {
+      sez.hidden = true;
+      var voce = document.querySelector(".voce-newsletter");
+      if (voce) voce.hidden = true;
+    }
+  })();
+
   // ---------- Menu in alto ----------
   (function () {
     var nav = document.querySelector(".menu-alto");

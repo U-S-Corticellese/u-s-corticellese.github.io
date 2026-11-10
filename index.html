@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="alternate" type="application/rss+xml" title="U.S. Corticellese · Partite e risultati" href="feed.xml">
 </head>
 <body>
 
@@ -32,6 +33,7 @@
         <li><a href="#chi-siamo">Storia</a></li>
         <li><a href="#sponsor">Sponsor</a></li>
         <li><a href="#diventa-sponsor">Diventa sponsor</a></li>
+        <li class="voce-newsletter"><a href="#newsletter">Newsletter</a></li>
         <li class="voce-insta"><a href="https://www.instagram.com/u.s.corticellese/" target="_blank" rel="noopener">Seguici su Instagram</a></li>
       </ul>
     </div>
@@ -199,6 +201,35 @@
       </div>
     </section>
 
+    <!-- ============ NEWSLETTER ============
+         La sezione resta nascosta finché il link del modulo Brevo è "LINK-ISCRIZIONE":
+         sostituiscilo con il link del modulo (https://....sibforms.com/serve/...) per mostrarla. -->
+    <section id="newsletter" class="sezione newsletter" data-link-iscrizione="LINK-ISCRIZIONE">
+      <div class="contenitore newsletter-griglia">
+        <div>
+          <p class="occhiello">Newsletter · gratis</p>
+          <h2>Non perderti<br>nessuna partita</h2>
+          <p class="newsletter-testo">Lascia la tua email: ti scriviamo noi <strong>il giorno prima di ogni partita</strong>
+            con orario e campo, e <strong>appena c'è il risultato</strong>, con la classifica aggiornata.
+            Niente pubblicità, ti cancelli quando vuoi con un clic.</p>
+          <a class="bottone" id="bottone-iscrizione" href="LINK-ISCRIZIONE" target="_blank" rel="noopener">Iscriviti alla newsletter</a>
+          <p class="newsletter-nota">Iscrivendoti accetti di ricevere le nostre email. Leggi l'<a href="privacy.html">informativa privacy</a>.</p>
+        </div>
+        <div class="anteprima-mail" aria-hidden="true">
+          <div class="mail">
+            <span class="mail-da">U.S. Corticellese</span>
+            <strong>Promemoria: domani si gioca!</strong>
+            <span>ASD San Paolo – Corticellese · ore 21:00 · Offlaga</span>
+          </div>
+          <div class="mail">
+            <span class="mail-da">U.S. Corticellese</span>
+            <strong>Vittoria: Corticellese 9-3 Castelnuovo 05</strong>
+            <span>In classifica: 13° posto con 6 punti</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ SPONSOR ============ -->
     <section id="sponsor" class="sezione">
       <div class="contenitore">
@@ -263,6 +294,7 @@
           <a id="fonte" href="https://risultati.csi.brescia.it/" target="_blank" rel="noopener">CSI Brescia</a>.
           I risultati <span class="etichetta ufficioso">ufficiosi</span> non sono ancora omologati.</p>
         <p id="aggiornato"></p>
+        <p><a href="privacy.html">Informativa privacy</a></p>
       </div>
     </div>
   </footer>
