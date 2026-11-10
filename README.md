@@ -53,5 +53,5 @@ portale CSI selezionando Sport → Società → Campionato.
 - **Sponsor:** in `index.html` cerca `class="sponsor"`. Per aggiungerne uno copia un `<li>` e metti il logo
   nella cartella principale. Se il logo è bianco, aggiungi `class="scuro"` al `<li>` per avere lo sfondo blu (come Tapporaso).
 - **Instagram:** https://www.instagram.com/u.s.corticellese/ (menu, fascia "Seguici" e Chi siamo).
-- **Email "Diventa sponsor":** è `piede14@yahoo.it`; per cambiarla cerca `mailto:` in `index.html`.
+- **Email "Diventa sponsor":** è `uscorticellese@gmail.com`; per cambiarla cerca `mailto:` in `index.html`.
 - **Caratteri:** Oswald, Barlow e Cormorant Garamond da Google Fonts.
