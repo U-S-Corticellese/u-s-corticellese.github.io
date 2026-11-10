@@ -1,8 +1,8 @@
 # encoding: utf-8
 # Scarica calendario, risultati e classifica della Corticellese dal portale
-# ufficiale del CSI Brescia (risultati.csi.brescia.it) e li salva in data/dati.js.
+# ufficiale del CSI Brescia (risultati.csi.brescia.it) e li salva in dati.js.
 #
-# Uso:  ruby scripts/aggiorna.rb
+# Uso:  ruby aggiorna.rb
 # Richiede solo Ruby (nessuna libreria esterna).
 
 require "net/http"
@@ -23,7 +23,7 @@ CONFIG = {
 
 BASE = "https://risultati.csi.brescia.it"
 ENDPOINT = URI("#{BASE}/public/ajax/filtri.php")
-OUTPUT = File.expand_path("../data/dati.js", __dir__)
+OUTPUT = File.expand_path("dati.js", __dir__)
 
 ENTITA = {
   "&amp;" => "&", "&quot;" => '"', "&#039;" => "'", "&apos;" => "'", "&lt;" => "<", "&gt;" => ">",
@@ -141,6 +141,6 @@ dati = {
 }
 
 Dir.mkdir(File.dirname(OUTPUT)) unless Dir.exist?(File.dirname(OUTPUT))
-File.write(OUTPUT, "// File generato da scripts/aggiorna.rb - non modificare a mano\nwindow.DATI = #{JSON.pretty_generate(dati)};\n")
+File.write(OUTPUT, "// File generato da aggiorna.rb - non modificare a mano\nwindow.DATI = #{JSON.pretty_generate(dati)};\n")
 mie = partite.count { |p| [p[:casa], p[:ospite]].include?(CONFIG[:squadra]) }
 puts "OK: #{partite.size} partite (#{mie} della #{CONFIG[:squadra]}), #{classifica.size} squadre in classifica -> #{OUTPUT}"
