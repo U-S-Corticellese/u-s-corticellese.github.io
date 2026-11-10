@@ -1,0 +1,57 @@
+name: Aggiorna dati e pubblica sito
+
+on:
+  schedule:
+    # Ogni 3 ore (orari UTC). Il CSI aggiorna i risultati dopo le partite.
+    - cron: "15 */3 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Scarica dati dal CSI Brescia
+        run: ruby aggiorna.rb
+
+      - name: Salva i dati aggiornati
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Salva dati.js e feed.xml (newsletter); ignora il cambio della sola data di aggiornamento
+          git add -A
+          if git diff --cached --quiet -I'"aggiornato"'; then
+            echo "Nessun dato nuovo."
+            git reset -q
+          else
+            git commit -m "Aggiorna risultati, classifica e newsletter"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
