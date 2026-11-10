@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>U.S. Corticellese 1968 · Calcio a 7</title>
+  <meta name="description" content="U.S. Corticellese, la squadra di calcio a 7 di Corticelle Pieve dal 1968: partite, risultati, classifica e sponsor.">
+  <meta name="theme-color" content="#001331">
+  <link rel="icon" href="assets/stemma.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ MENU ============ -->
+  <nav class="menu-alto" aria-label="Menu principale">
+    <div class="contenitore menu-riga">
+      <a class="menu-marchio" href="#" aria-label="Torna su">
+        <img src="assets/stemma.png" alt="" width="66" height="52">
+        <span>U.S. Corticellese<small>dal 1968</small></span>
+      </a>
+      <button class="menu-apri" type="button" aria-expanded="false" aria-controls="voci-menu">
+        <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+      <ul class="menu-voci" id="voci-menu">
+        <li><a href="#stagione">Partite</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#classifica">Classifica</a></li>
+        <li><a href="#chi-siamo">Storia</a></li>
+        <li><a href="#sponsor">Sponsor</a></li>
+        <li><a href="#diventa-sponsor">Diventa sponsor</a></li>
+        <li class="voce-insta"><a href="https://www.instagram.com/u.s.corticellese/" target="_blank" rel="noopener">Seguici su Instagram</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ APERTURA ============ -->
+  <header class="apertura">
+    <div class="fulmine" aria-hidden="true"></div>
+    <div class="contenitore apertura-griglia">
+      <div class="apertura-nome">
+        <img class="stemma" src="assets/stemma.png" alt="Stemma U.S. Corticellese 1968">
+        <p class="occhiello">Corticelle Pieve · dal 1968</p>
+        <h1>U.S. Corticellese</h1>
+        <p class="campionato" id="campionato">Calcio a 7</p>
+      </div>
+      <div class="prossima" id="prossima-partita" aria-live="polite"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ STAGIONE ============ -->
+    <section id="stagione" class="sezione">
+      <div class="contenitore">
+        <header class="titolo-sezione">
+          <span class="numero-sezione">01</span>
+          <h2>La stagione</h2>
+        </header>
+        <div id="numeri" class="numeri"></div>
+
+        <div class="due-colonne">
+          <div>
+            <h3 class="sottotitolo">Ultimi risultati</h3>
+            <ol id="ultimi" class="partite"></ol>
+          </div>
+          <div>
+            <div class="riga-titolo">
+              <h3 class="sottotitolo">Risultati del girone</h3>
+              <select id="scegli-giornata" aria-label="Scegli la giornata"></select>
+            </div>
+            <ol id="lista-giornata" class="partite girone"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CALENDARIO ============ -->
+    <section id="calendario" class="sezione chiara">
+      <div class="contenitore">
+        <header class="titolo-sezione">
+          <span class="numero-sezione">02</span>
+          <h2>Calendario</h2>
+          <div class="filtri" role="group" aria-label="Filtra partite">
+            <button type="button" data-filtro="tutte" class="attivo">Tutte</button>
+            <button type="button" data-filtro="giocate">Giocate</button>
+            <button type="button" data-filtro="dagiocare">Da giocare</button>
+          </div>
+        </header>
+        <ol id="lista-calendario" class="partite calendario"></ol>
+      </div>
+    </section>
+
+    <!-- ============ CLASSIFICA ============ -->
+    <section id="classifica" class="sezione">
+      <div class="contenitore">
+        <header class="titolo-sezione">
+          <span class="numero-sezione">03</span>
+          <h2>Classifica</h2>
+        </header>
+        <div class="tabella-scroll">
+          <table class="classifica">
+            <thead>
+              <tr>
+                <th scope="col">Pos</th>
+                <th scope="col" class="sx">Squadra</th>
+                <th scope="col" title="Punti">Pt</th>
+                <th scope="col" title="Giocate">G</th>
+                <th scope="col" title="Vinte">V</th>
+                <th scope="col" title="Pareggiate">N</th>
+                <th scope="col" title="Perse">P</th>
+                <th scope="col" class="opz" title="Gol fatti">GF</th>
+                <th scope="col" class="opz" title="Gol subiti">GS</th>
+                <th scope="col" title="Differenza reti">DR</th>
+              </tr>
+            </thead>
+            <tbody id="righe-classifica"></tbody>
+          </table>
+        </div>
+        <p class="nota" id="nota-classifica"></p>
+      </div>
+    </section>
+
+    <!-- ============ CHI SIAMO ============ -->
+    <section id="chi-siamo" class="sezione storia">
+      <div class="contenitore">
+        <header class="titolo-sezione chiaro">
+          <span class="numero-sezione">04</span>
+          <h2>La nostra storia</h2>
+        </header>
+
+        <div class="storia-apertura">
+          <figure class="cimelio">
+            <img src="assets/stemma-storico.jpg" alt="Lo stemma storico della U.S. Corticellese: un castello con due torri e la scritta U.S. Corticellese 1968">
+            <figcaption>Lo stemma storico: il castello e l'anno di fondazione.</figcaption>
+          </figure>
+          <div class="storia-testo">
+            <p class="anno-grande" aria-hidden="true">1968</p>
+            <h3>Il calcio di Corticelle Pieve</h3>
+            <p class="attacco">L'<strong>Unione Sportiva Corticellese</strong> nasce nel <strong>1968</strong> a Corticelle Pieve,
+              frazione di Dello, nella Bassa Bresciana. È una delle squadre più antiche del calcio dilettantistico
+              bresciano e da più di mezzo secolo porta in campo il nome del paese.</p>
+            <p>Oggi la Corticellese gioca a <strong>calcio a 7</strong> nei campionati del
+              <a href="https://csibrescia.it/attivita-sportive/calcio-a-7/open/" target="_blank" rel="noopener">CSI Brescia</a>
+              e ospita gli avversari al campo dell'<strong>oratorio</strong>, in via Alessandro Manzoni.</p>
+          </div>
+        </div>
+
+        <dl class="cifre">
+          <div><dt>Fondazione</dt><dd>1968</dd></div>
+          <div><dt>Anni di storia</dt><dd id="anni-storia">58</dd></div>
+          <div><dt>In campo</dt><dd>7<small>contro 7</small></dd></div>
+          <div><dt>Colori</dt><dd class="colori"><span class="blu"></span><span class="bordeaux"></span><small>blu e bordeaux</small></dd></div>
+        </dl>
+
+        <ol class="linea-tempo">
+          <li>
+            <span class="tappa">1968</span>
+            <p><strong>Nasce l'U.S. Corticellese.</strong> Lo stemma della società, con il castello, porta ancora questa data.</p>
+          </li>
+          <li class="da-scrivere">
+            <span class="tappa">…</span>
+            <p><strong>Gli anni da raccontare.</strong> Campionati, promozioni, giocatori e dirigenti che hanno fatto la storia:
+              hai foto o ricordi? <a href="https://www.instagram.com/u.s.corticellese/" target="_blank" rel="noopener">Scrivici su Instagram</a>.</p>
+            <!-- Aggiungi qui altre tappe copiando un <li> come quello del 1968 -->
+          </li>
+          <li>
+            <span class="tappa">2024</span>
+            <p><strong>Serie A di calcio a 7 del CSI Brescia.</strong> La Corticellese è iscritta alla Serie A maschile.</p>
+          </li>
+          <li>
+            <span class="tappa">2026</span>
+            <p><strong>Serie A Open, Girone A.</strong> Quattordici squadre, andata e ritorno, ventisei giornate.</p>
+          </li>
+        </ol>
+
+        <div class="paese">
+          <h3>Il nostro paese</h3>
+          <p>A nord di Corticelle Pieve, in aperta campagna vicino al fiume Mella, sorge l'antica
+            <strong>Pieve di Santa Maria Nascente</strong>, detta <em>della Formigola</em>.
+            Dal 2001 l'associazione Amici della Pieve della Formigola si occupa del suo restauro
+            e ogni ottobre organizza un festival di musica classica.
+            Il paese ha dato i natali anche a <strong>fra Giacomo Bulgaro</strong>, per cui è in corso la causa di beatificazione.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="fascia-fb">
+      <div class="contenitore fascia-riga">
+        <div>
+          <p class="occhiello">Seguici · @u.s.corticellese</p>
+          <h2>La Corticellese su Instagram</h2>
+          <p>Partite, classifiche e risultati, allenamenti, la squadra e la tifoseria.</p>
+        </div>
+        <a class="bottone chiaro" href="https://www.instagram.com/u.s.corticellese/" target="_blank" rel="noopener">Segui su Instagram</a>
+      </div>
+    </section>
+
+    <!-- ============ SPONSOR ============ -->
+    <section id="sponsor" class="sezione">
+      <div class="contenitore">
+        <header class="titolo-sezione">
+          <span class="numero-sezione">05</span>
+          <h2>Sponsor</h2>
+        </header>
+        <p class="intro-sponsor">Grazie alle attività che sostengono la Corticellese.</p>
+
+        <!-- Per aggiungere uno sponsor copia un <li>; metti il logo in assets/.
+             Se il logo è chiaro (bianco), aggiungi class="scuro" al <li> per avere lo sfondo blu. -->
+        <ul class="sponsor">
+          <li class="scuro">
+            <a class="logo-link" href="https://tapporaso.it" target="_blank" rel="noopener">
+              <img class="logo" src="assets/logo-tapporaso.png" alt="Tapporaso" width="1024" height="320">
+            </a>
+            <span class="settore">Enoteca contemporanea e wine bar · Dello</span>
+            <span class="link">
+              <a href="https://tapporaso.it" target="_blank" rel="noopener">Sito</a>
+              <a href="https://www.instagram.com/tapporaso/" target="_blank" rel="noopener">Instagram</a>
+            </span>
+          </li>
+          <li>
+            <a class="logo-link" href="https://globalsider.it" target="_blank" rel="noopener">
+              <img class="logo" src="assets/logo-globalsider.svg" alt="Globalsider" width="280" height="80">
+            </a>
+            <span class="settore">Centro servizi nastri e lamiere d'acciaio · Mairano</span>
+            <span class="link">
+              <a href="https://globalsider.it" target="_blank" rel="noopener">Sito</a>
+            </span>
+          </li>
+          <li>
+            <a class="logo-link" href="https://www.instagram.com/offgeneration/" target="_blank" rel="noopener">
+              <img class="logo quadrato" src="assets/logo-offgeneration.jpg" alt="OFFgeneration" width="150" height="150">
+            </a>
+            <span class="settore">Grafica, foto, video e artwork</span>
+            <span class="link">
+              <a href="https://www.instagram.com/offgeneration/" target="_blank" rel="noopener">Instagram</a>
+            </span>
+          </li>
+        </ul>
+
+        <div class="diventa-sponsor" id="diventa-sponsor">
+          <div>
+            <p class="occhiello">Diventa sponsor</p>
+            <h3>Metti la tua attività in squadra</h3>
+            <p>Sostieni la squadra del paese e fai conoscere la tua attività a giocatori, famiglie e tifosi.
+              Scrivici e ti raccontiamo come.</p>
+          </div>
+          <a class="bottone" href="mailto:piede14@yahoo.it?subject=Sponsorizzazione%20U.S.%20Corticellese&amp;body=Buongiorno%2C%0D%0Avorrei%20informazioni%20per%20diventare%20sponsor%20della%20U.S.%20Corticellese.%0D%0A%0D%0ANome%20attivit%C3%A0%3A%0D%0ATelefono%3A%0D%0A">Diventa sponsor</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="piede">
+    <div class="contenitore piede-riga">
+      <img src="assets/stemma.png" alt="" class="piede-stemma">
+      <div>
+        <p><strong>U.S. Corticellese 1968</strong> · Corticelle Pieve, Dello (BS)</p>
+        <p>Dati di calendario, risultati e classifica:
+          <a id="fonte" href="https://risultati.csi.brescia.it/" target="_blank" rel="noopener">CSI Brescia</a>.
+          I risultati <span class="etichetta ufficioso">ufficiosi</span> non sono ancora omologati.</p>
+        <p id="aggiornato"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/dati.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
