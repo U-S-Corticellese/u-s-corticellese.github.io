@@ -1,9 +1,9 @@
-// File generato da scripts/aggiorna.rb - non modificare a mano
+// File generato da aggiorna.rb - non modificare a mano
 window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-10T18:05:57Z",
+  "aggiornato": "2026-11-10T19:26:11Z",
   "partite": [
     {
       "fase": "ANDATA",
