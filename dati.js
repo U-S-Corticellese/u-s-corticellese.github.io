@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-10T19:53:36Z",
+  "aggiornato": "2026-11-11T21:42:31Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -646,7 +646,7 @@ window.DATI = {
       "codice": "2026101AA0701",
       "gol_casa": 9,
       "gol_ospite": 3,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -661,7 +661,7 @@ window.DATI = {
       "codice": "2026101AA0702",
       "gol_casa": 0,
       "gol_ospite": 2,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -676,7 +676,7 @@ window.DATI = {
       "codice": "2026101AA0703",
       "gol_casa": 4,
       "gol_ospite": 2,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -691,7 +691,7 @@ window.DATI = {
       "codice": "2026101AA0704",
       "gol_casa": 3,
       "gol_ospite": 6,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -706,7 +706,7 @@ window.DATI = {
       "codice": "2026101AA0705",
       "gol_casa": 3,
       "gol_ospite": 3,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -721,7 +721,7 @@ window.DATI = {
       "codice": "2026101AA0706",
       "gol_casa": 10,
       "gol_ospite": 4,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -736,7 +736,7 @@ window.DATI = {
       "codice": "2026101AA0707",
       "gol_casa": 3,
       "gol_ospite": 5,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -2748,7 +2748,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 53,
       "gol_subiti": 18,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 2,
@@ -2761,7 +2761,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 26,
       "gol_subiti": 13,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 3,
@@ -2774,7 +2774,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 21,
       "gol_subiti": 17,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 4,
@@ -2787,23 +2787,10 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 34,
       "gol_subiti": 38,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 5,
-      "squadra": "SG CASAGLIA",
-      "punti": 10,
-      "giocate": 7,
-      "vinte": 3,
-      "pareggiate": 1,
-      "perse": 3,
-      "penalita": 0,
-      "gol_fatti": 32,
-      "gol_subiti": 29,
-      "ufficiosa": true
-    },
-    {
-      "posizione": 6,
       "squadra": "ASD SAN PAOLO",
       "punti": 10,
       "giocate": 6,
@@ -2813,7 +2800,20 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 24,
       "gol_subiti": 27,
-      "ufficiosa": true
+      "ufficiosa": false
+    },
+    {
+      "posizione": 6,
+      "squadra": "SG CASAGLIA",
+      "punti": 10,
+      "giocate": 7,
+      "vinte": 3,
+      "pareggiate": 1,
+      "perse": 3,
+      "penalita": 0,
+      "gol_fatti": 32,
+      "gol_subiti": 29,
+      "ufficiosa": false
     },
     {
       "posizione": 7,
@@ -2826,23 +2826,10 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 24,
       "gol_subiti": 25,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 8,
-      "squadra": "CSI CORZANO",
-      "punti": 8,
-      "giocate": 7,
-      "vinte": 2,
-      "pareggiate": 2,
-      "perse": 3,
-      "penalita": 0,
-      "gol_fatti": 37,
-      "gol_subiti": 44,
-      "ufficiosa": true
-    },
-    {
-      "posizione": 9,
       "squadra": "OR. CAPRIANO",
       "punti": 8,
       "giocate": 7,
@@ -2852,7 +2839,20 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 28,
       "gol_subiti": 32,
-      "ufficiosa": true
+      "ufficiosa": false
+    },
+    {
+      "posizione": 9,
+      "squadra": "CSI CORZANO",
+      "punti": 8,
+      "giocate": 7,
+      "vinte": 2,
+      "pareggiate": 2,
+      "perse": 3,
+      "penalita": 0,
+      "gol_fatti": 37,
+      "gol_subiti": 44,
+      "ufficiosa": false
     },
     {
       "posizione": 10,
@@ -2865,7 +2865,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 27,
       "gol_subiti": 37,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 11,
@@ -2878,7 +2878,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 27,
       "gol_subiti": 36,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 12,
@@ -2891,7 +2891,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 24,
       "gol_subiti": 34,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 13,
@@ -2904,7 +2904,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 20,
       "gol_subiti": 23,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 14,
@@ -2917,7 +2917,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 15,
       "gol_subiti": 19,
-      "ufficiosa": true
+      "ufficiosa": false
     }
   ]
 };
