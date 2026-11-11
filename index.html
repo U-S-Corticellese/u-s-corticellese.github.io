@@ -29,6 +29,7 @@
         <li><a href="#stagione">Partite</a></li>
         <li><a href="#calendario">Calendario</a></li>
         <li><a href="#classifica">Classifica</a></li>
+        <li class="voce-foto"><a href="#foto">Foto</a></li>
         <li><a href="#chi-siamo">Storia</a></li>
         <li><a href="#sponsor">Sponsor</a></li>
         <li><a href="#diventa-sponsor">Diventa sponsor</a></li>
@@ -123,11 +124,33 @@
       </div>
     </section>
 
+    <!-- ============ FOTO ============
+         Gli album sono elencati in foto.js -->
+    <section id="foto" class="sezione chiara" hidden>
+      <div class="contenitore">
+        <header class="titolo-sezione">
+          <span class="numero-sezione">04</span>
+          <h2>Foto</h2>
+        </header>
+        <div id="album"></div>
+      </div>
+    </section>
+
+    <dialog class="galleria" id="galleria" aria-label="Foto a schermo intero">
+      <button type="button" class="galleria-chiudi" aria-label="Chiudi">✕</button>
+      <button type="button" class="galleria-freccia prec" aria-label="Foto precedente">‹</button>
+      <figure>
+        <img id="galleria-img" alt="">
+        <figcaption id="galleria-didascalia"></figcaption>
+      </figure>
+      <button type="button" class="galleria-freccia succ" aria-label="Foto successiva">›</button>
+    </dialog>
+
     <!-- ============ CHI SIAMO ============ -->
     <section id="chi-siamo" class="sezione storia">
       <div class="contenitore">
         <header class="titolo-sezione chiaro">
-          <span class="numero-sezione">04</span>
+          <span class="numero-sezione">05</span>
           <h2>La nostra storia</h2>
         </header>
 
@@ -203,7 +226,7 @@
     <section id="sponsor" class="sezione">
       <div class="contenitore">
         <header class="titolo-sezione">
-          <span class="numero-sezione">05</span>
+          <span class="numero-sezione">06</span>
           <h2>Sponsor</h2>
         </header>
         <p class="intro-sponsor">Grazie alle attività che sostengono la Corticellese.</p>
@@ -269,6 +292,7 @@
   </footer>
 
   <script src="dati.js"></script>
+  <script src="foto.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

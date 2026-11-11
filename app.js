@@ -7,16 +7,79 @@
   var anni = $("anni-storia");
   if (anni) anni.textContent = new Date().getFullYear() - 1968;
 
-  // ---------- Newsletter: visibile solo quando c'è il link del modulo ----------
+  // ---------- Foto: album da foto.js, foto a schermo intero ----------
   (function () {
-    var sez = $("newsletter");
+    var album = window.ALBUM || [];
+    var sez = $("foto");
     if (!sez) return;
-    var link = $("bottone-iscrizione").getAttribute("href") || "";
-    if (/LINK-ISCRIZIONE/.test(link) || !/^https?:/.test(link)) {
-      sez.hidden = true;
-      var voce = document.querySelector(".voce-newsletter");
-      if (voce) voce.hidden = true;
+    var voce = document.querySelector(".voce-foto");
+    if (!album.length) { if (voce) voce.hidden = true; return; }
+    sez.hidden = false;
+
+    var esc = function (s) {
+      return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+      });
+    };
+    var mini = function (f) { return f.replace(/(\.[a-z]+)$/i, "-mini$1"); };
+    var PRIME = 12; // foto mostrate prima di "Mostra tutte"
+
+    $("album").innerHTML = album.map(function (a, ia) {
+      return '<article class="album">' +
+        '<header class="album-testa"><div><h3>' + esc(a.titolo) + "</h3>" +
+        '<p>' + esc([a.data, a.descrizione].filter(Boolean).join(" · ")) + "</p></div>" +
+        '<span class="album-conta">' + a.foto.length + " foto</span></header>" +
+        '<ul class="griglia-foto">' + a.foto.map(function (f, i) {
+          return '<li' + (i >= PRIME ? " hidden" : "") + '><button type="button" data-album="' + ia + '" data-foto="' + i + '" aria-label="Apri foto ' + (i + 1) + '">' +
+            '<img src="' + esc(mini(f)) + '" alt="' + esc(a.titolo + ", foto " + (i + 1)) + '" loading="lazy"></button></li>';
+        }).join("") + "</ul>" +
+        (a.foto.length > PRIME ? '<button type="button" class="bottone mostra-tutte">Mostra tutte le ' + a.foto.length + " foto</button>" : "") +
+        "</article>";
+    }).join("");
+    $("album").addEventListener("click", function (e) {
+      var b = e.target.closest(".mostra-tutte");
+      if (!b) return;
+      b.closest(".album").querySelectorAll(".griglia-foto li[hidden]").forEach(function (li) { li.hidden = false; });
+      b.remove();
+    });
+
+    var dlg = $("galleria"), img = $("galleria-img"), cap = $("galleria-didascalia");
+    var ca = 0, cf = 0;
+    function mostra() {
+      var a = album[ca];
+      img.src = a.foto[cf];
+      img.alt = a.titolo + ", foto " + (cf + 1);
+      cap.textContent = a.titolo + " · " + (cf + 1) + " di " + a.foto.length;
     }
+    function sposta(d) { var n = album[ca].foto.length; cf = (cf + d + n) % n; mostra(); }
+    function apri(a, f) {
+      ca = a; cf = f; mostra();
+      if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+    }
+    function chiudi() { if (dlg.close) dlg.close(); else dlg.removeAttribute("open"); }
+
+    $("album").addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-album]");
+      if (b) apri(+b.getAttribute("data-album"), +b.getAttribute("data-foto"));
+    });
+    dlg.querySelector(".galleria-chiudi").addEventListener("click", chiudi);
+    dlg.querySelector(".prec").addEventListener("click", function () { sposta(-1); });
+    dlg.querySelector(".succ").addEventListener("click", function () { sposta(1); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) chiudi(); });
+    document.addEventListener("keydown", function (e) {
+      if (!dlg.open) return;
+      if (e.key === "ArrowLeft") sposta(-1);
+      if (e.key === "ArrowRight") sposta(1);
+    });
+    // scorrimento con il dito sul telefono
+    var x0 = null;
+    dlg.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    dlg.addEventListener("touchend", function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 50) sposta(dx < 0 ? 1 : -1);
+      x0 = null;
+    });
   })();
 
   // ---------- Menu in alto ----------
