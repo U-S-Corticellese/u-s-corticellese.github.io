@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-12T01:16:29Z",
+  "aggiornato": "2026-11-12T21:52:42Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -791,13 +791,13 @@ window.DATI = {
       "turno": 8,
       "casa": "ASD CIVIDALE",
       "ospite": "VILLAUNITED",
-      "data": "12/11/2026",
-      "ora": "21:00",
+      "data": "//",
+      "ora": "",
       "codice": "2026101AA0804",
       "gol_casa": null,
       "gol_ospite": null,
       "ufficioso": false,
-      "spostata": false,
+      "spostata": true,
       "campo": "CAMPO SPORTIVO COMUNALE VIA GOITO 8 - CIVIDALE MANTOVANO MN"
     },
     {
