@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-11T21:42:31Z",
+  "aggiornato": "2026-11-12T01:16:29Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -828,7 +828,7 @@ window.DATI = {
       "gol_ospite": null,
       "ufficioso": false,
       "spostata": false,
-      "campo": "ORATORIO FLERO VIA GIUSEPPE MAZZINI - FLERO BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -1061,13 +1061,13 @@ window.DATI = {
       "turno": 11,
       "casa": "GAMBARA 025",
       "ospite": "AUDAX BORGO",
-      "data": "08/12/2026",
+      "data": "03/12/2026",
       "ora": "21:00",
       "codice": "2026101AA1101",
       "gol_casa": null,
       "gol_ospite": null,
       "ufficioso": false,
-      "spostata": false,
+      "spostata": true,
       "campo": "ORATORIO GAMBARA VIA BAZZONI - GAMBARA BS"
     },
     {
