@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-12T21:52:42Z",
+  "aggiornato": "2026-11-13T01:13:57Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -842,8 +842,8 @@ window.DATI = {
       "gol_casa": null,
       "gol_ospite": null,
       "ufficioso": false,
-      "spostata": true,
-      "campo": "CENTRO SPORTIVO OFFLAGA (BS) VIA FE' D'OSTIANI - OFFLAGA BS"
+      "spostata": false,
+      "campo": null
     },
     {
       "fase": "ANDATA",
