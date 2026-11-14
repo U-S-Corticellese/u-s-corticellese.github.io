@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-14T01:04:50Z",
+  "aggiornato": "2026-11-14T09:51:09Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -764,9 +764,9 @@ window.DATI = {
       "data": "13/11/2026",
       "ora": "20:30",
       "codice": "2026101AA0802",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 2,
+      "gol_ospite": 3,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -2740,28 +2740,28 @@ window.DATI = {
     {
       "posizione": 1,
       "squadra": "R.G.S.FRANC.A",
-      "punti": 18,
-      "giocate": 7,
-      "vinte": 6,
+      "punti": 21,
+      "giocate": 8,
+      "vinte": 7,
       "pareggiate": 0,
       "perse": 1,
       "penalita": 0,
-      "gol_fatti": 53,
-      "gol_subiti": 18,
-      "ufficiosa": false
+      "gol_fatti": 56,
+      "gol_subiti": 20,
+      "ufficiosa": true
     },
     {
       "posizione": 2,
       "squadra": "U.S. CIGOLESE",
       "punti": 17,
-      "giocate": 7,
+      "giocate": 8,
       "vinte": 5,
       "pareggiate": 2,
-      "perse": 0,
+      "perse": 1,
       "penalita": 0,
-      "gol_fatti": 26,
-      "gol_subiti": 13,
-      "ufficiosa": false
+      "gol_fatti": 28,
+      "gol_subiti": 16,
+      "ufficiosa": true
     },
     {
       "posizione": 3,
