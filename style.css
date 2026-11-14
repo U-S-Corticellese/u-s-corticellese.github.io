@@ -437,3 +437,4 @@ html, body { overflow-x: clip; }
 /* Foto: elementi nascosti e tasto "Mostra tutte" */
 .griglia-foto li[hidden] { display: none; }
 .mostra-tutte { margin-top: 18px; cursor: pointer; }
+.etichetta.attesa { color: var(--tenue); }

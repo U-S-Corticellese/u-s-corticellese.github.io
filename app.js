@@ -155,8 +155,12 @@
 
   D.partite.forEach(function (p) { p._data = dataDi(p); });
   var mie = D.partite.filter(nostra).sort(function (a, b) { return (a._data || 0) - (b._data || 0); });
+  // Una partita senza risultato è "in attesa" se è iniziata da più di 2 ore
+  var ORA = Date.now();
+  function inAttesa(p) { return !giocata(p) && p._data && p._data.getTime() + 2 * 3600e3 < ORA; }
   var giocate = mie.filter(giocata);
-  var daGiocare = mie.filter(function (p) { return !giocata(p); });
+  var passate = mie.filter(function (p) { return giocata(p) || inAttesa(p); });
+  var daGiocare = mie.filter(function (p) { return !giocata(p) && !inAttesa(p); });
 
   $("campionato").textContent = D.campionato;
   if (D.fonte) $("fonte").href = D.fonte;
@@ -215,7 +219,9 @@
     var e = esito(p);
     var extra = [];
     if (!opz.girone) extra.push(esc(etichettaGiornata(p)));
-    if (!g && p.campo && !opz.girone) extra.push(esc(nome(p.campo)));
+    if (!g && !inAttesa(p) && p.campo && !opz.girone) extra.push(esc(nome(p.campo)));
+    var attesa = inAttesa(p);
+    if (attesa) extra.push('<span class="etichetta attesa">risultato in attesa</span>');
     if (p.ufficioso) extra.push('<span class="etichetta ufficioso">ufficioso</span>');
     if (p.spostata) extra.push('<span class="etichetta spostata">data variata</span>');
     var sq = function (n, gol) {
@@ -225,13 +231,13 @@
     var data = opz.girone ? "" :
       '<div class="data">' + (p._data ? esc(fmtGiorno.format(p._data)) : "—") + "<small>" + esc(p.ora) + "</small></div>";
     var badge = opz.girone ? "" : (e ? '<span class="esito ' + e + '" title="' + parolaEsito[e] + '">' + e + "</span>" : "<span></span>");
-    return '<li class="partita' + (g ? " giocata" : "") + '" data-giocata="' + (g ? 1 : 0) + '">' + data +
+    return '<li class="partita' + (g || attesa ? " giocata" : "") + '" data-giocata="' + (g || attesa ? 1 : 0) + '">' + data +
       '<div class="squadre">' + sq(p.casa, p.gol_casa) + sq(p.ospite, p.gol_ospite) + "</div>" + badge +
       (extra.length ? '<div class="extra">' + extra.join("<span>·</span>") + "</div>" : "") + "</li>";
   }
 
-  $("ultimi").innerHTML = giocate.length
-    ? giocate.slice(-5).reverse().map(function (p) { return rigaPartita(p); }).join("")
+  $("ultimi").innerHTML = passate.length
+    ? passate.slice(-5).reverse().map(function (p) { return rigaPartita(p); }).join("")
     : '<li class="vuoto">Ancora nessuna partita giocata.</li>';
 
   // ---------- Calendario ----------
@@ -267,7 +273,7 @@
     D.partite.forEach(function (p) { (per[p.turno] = per[p.turno] || []).push(p); });
     var turni = Object.keys(per).map(Number).sort(function (a, b) { return a - b; });
     var ultimo = turni[0];
-    turni.forEach(function (n) { if (per[n].some(giocata)) ultimo = n; });
+    turni.forEach(function (n) { if (per[n].some(function (p) { return giocata(p) || inAttesa(p); })) ultimo = n; });
     var sel = $("scegli-giornata");
     sel.innerHTML = turni.map(function (n) {
       return '<option value="' + n + '"' + (n === ultimo ? " selected" : "") + ">" + esc(etichettaGiornata(per[n][0])) + "</option>";
