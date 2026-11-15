@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-14T09:51:09Z",
+  "aggiornato": "2026-11-15T01:10:09Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -813,7 +813,7 @@ window.DATI = {
       "gol_ospite": null,
       "ufficioso": false,
       "spostata": false,
-      "campo": "ORATORIO JOLLY ORZINUOVI VIA XXV APRILE - ORZINUOVI BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
