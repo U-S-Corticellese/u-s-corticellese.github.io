@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-17T01:14:47Z",
+  "aggiornato": "2026-11-17T13:13:04Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -404,9 +404,9 @@ window.DATI = {
       "data": "16/11/2026",
       "ora": "21:00",
       "codice": "2026101AA0406",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 1,
+      "gol_ospite": 3,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -2779,15 +2779,15 @@ window.DATI = {
     {
       "posizione": 4,
       "squadra": "CASTELNUOVO 05",
-      "punti": 10,
-      "giocate": 6,
-      "vinte": 3,
+      "punti": 13,
+      "giocate": 7,
+      "vinte": 4,
       "pareggiate": 1,
       "perse": 2,
       "penalita": 0,
-      "gol_fatti": 34,
-      "gol_subiti": 38,
-      "ufficiosa": false
+      "gol_fatti": 37,
+      "gol_subiti": 39,
+      "ufficiosa": true
     },
     {
       "posizione": 5,
@@ -2910,14 +2910,14 @@ window.DATI = {
       "posizione": 14,
       "squadra": "ASD CIVIDALE",
       "punti": 4,
-      "giocate": 6,
+      "giocate": 7,
       "vinte": 1,
       "pareggiate": 1,
-      "perse": 4,
+      "perse": 5,
       "penalita": 0,
-      "gol_fatti": 15,
-      "gol_subiti": 19,
-      "ufficiosa": false
+      "gol_fatti": 16,
+      "gol_subiti": 22,
+      "ufficiosa": true
     }
   ]
 };
