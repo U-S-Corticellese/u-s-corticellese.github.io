@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-17T13:13:04Z",
+  "aggiornato": "2026-11-18T01:20:42Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -317,8 +317,8 @@ window.DATI = {
       "gol_casa": null,
       "gol_ospite": null,
       "ufficioso": false,
-      "spostata": true,
-      "campo": "ORAT. VEROLAVECCHIA VIA VITTORIO VENETO - VEROLAVECCHIA BS"
+      "spostata": false,
+      "campo": null
     },
     {
       "fase": "ANDATA",
