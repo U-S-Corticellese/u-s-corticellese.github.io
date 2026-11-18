@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-18T01:20:42Z",
+  "aggiornato": "2026-11-18T10:09:59Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -314,9 +314,9 @@ window.DATI = {
       "data": "17/11/2026",
       "ora": "20:45",
       "codice": "2026101AA0307",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 8,
+      "gol_ospite": 1,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -1286,13 +1286,13 @@ window.DATI = {
       "turno": 13,
       "casa": "VEROLAVECCHIA",
       "ospite": "AUDAX BORGO",
-      "data": "22/12/2026",
+      "data": "17/12/2026",
       "ora": "20:45",
       "codice": "2026101AA1302",
       "gol_casa": null,
       "gol_ospite": null,
       "ufficioso": false,
-      "spostata": false,
+      "spostata": true,
       "campo": "ORAT. VEROLAVECCHIA VIA VITTORIO VENETO - VEROLAVECCHIA BS"
     },
     {
@@ -2791,19 +2791,32 @@ window.DATI = {
     },
     {
       "posizione": 5,
-      "squadra": "ASD SAN PAOLO",
-      "punti": 10,
-      "giocate": 6,
+      "squadra": "VEROLAVECCHIA",
+      "punti": 12,
+      "giocate": 7,
       "vinte": 3,
-      "pareggiate": 1,
-      "perse": 2,
+      "pareggiate": 3,
+      "perse": 1,
       "penalita": 0,
-      "gol_fatti": 24,
-      "gol_subiti": 27,
-      "ufficiosa": false
+      "gol_fatti": 32,
+      "gol_subiti": 26,
+      "ufficiosa": true
     },
     {
       "posizione": 6,
+      "squadra": "ASD SAN PAOLO",
+      "punti": 10,
+      "giocate": 7,
+      "vinte": 3,
+      "pareggiate": 1,
+      "perse": 3,
+      "penalita": 0,
+      "gol_fatti": 25,
+      "gol_subiti": 35,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 7,
       "squadra": "SG CASAGLIA",
       "punti": 10,
       "giocate": 7,
@@ -2813,19 +2826,6 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 32,
       "gol_subiti": 29,
-      "ufficiosa": false
-    },
-    {
-      "posizione": 7,
-      "squadra": "VEROLAVECCHIA",
-      "punti": 9,
-      "giocate": 6,
-      "vinte": 2,
-      "pareggiate": 3,
-      "perse": 1,
-      "penalita": 0,
-      "gol_fatti": 24,
-      "gol_subiti": 25,
       "ufficiosa": false
     },
     {
