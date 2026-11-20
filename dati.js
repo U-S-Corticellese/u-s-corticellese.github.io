@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-18T21:56:48Z",
+  "aggiornato": "2026-11-20T16:00:34Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -1269,16 +1269,16 @@ window.DATI = {
       "fase": "ANDATA",
       "giornata": 13,
       "turno": 13,
-      "casa": "VILLAUNITED",
-      "ospite": "GAMBARA 025",
+      "casa": "GAMBARA 025",
+      "ospite": "VILLAUNITED",
       "data": "19/12/2026",
-      "ora": "20:30",
+      "ora": "21:00",
       "codice": "2026101AA1301",
       "gol_casa": null,
       "gol_ospite": null,
       "ufficioso": false,
-      "spostata": false,
-      "campo": "C.S. VILLACHIARA VIA MATTEOTTI - VILLACHIARA BS"
+      "spostata": true,
+      "campo": "ORATORIO GAMBARA VIA BAZZONI - GAMBARA BS"
     },
     {
       "fase": "ANDATA",
@@ -2634,16 +2634,16 @@ window.DATI = {
       "fase": "RITORNO",
       "giornata": 13,
       "turno": 26,
-      "casa": "GAMBARA 025",
-      "ospite": "VILLAUNITED",
-      "data": "16/04/2027",
-      "ora": "21:00",
+      "casa": "VILLAUNITED",
+      "ospite": "GAMBARA 025",
+      "data": "17/04/2027",
+      "ora": "20:30",
       "codice": "2026101AR1301",
       "gol_casa": null,
       "gol_ospite": null,
       "ufficioso": false,
-      "spostata": false,
-      "campo": "ORATORIO GAMBARA VIA BAZZONI - GAMBARA BS"
+      "spostata": true,
+      "campo": "C.S. VILLACHIARA VIA MATTEOTTI - VILLACHIARA BS"
     },
     {
       "fase": "RITORNO",
