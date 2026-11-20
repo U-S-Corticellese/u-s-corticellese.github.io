@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-20T16:00:34Z",
+  "aggiornato": "2026-11-20T21:53:59Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -944,9 +944,9 @@ window.DATI = {
       "data": "20/11/2026",
       "ora": "20:45",
       "codice": "2026101AA0907",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 6,
+      "gol_ospite": 3,
+      "ufficioso": true,
       "spostata": false,
       "campo": "ORATORIO CORZANO VIA ALCIDE DE GASPERI - CORZANO BS"
     },
