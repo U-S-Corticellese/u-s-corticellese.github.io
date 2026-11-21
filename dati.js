@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-21T01:15:49Z",
+  "aggiornato": "2026-11-21T09:52:58Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -914,9 +914,9 @@ window.DATI = {
       "data": "20/11/2026",
       "ora": "20:45",
       "codice": "2026101AA0905",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 10,
+      "gol_ospite": 5,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -929,9 +929,9 @@ window.DATI = {
       "data": "20/11/2026",
       "ora": "20:45",
       "codice": "2026101AA0906",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 2,
+      "gol_ospite": 5,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -2740,28 +2740,28 @@ window.DATI = {
     {
       "posizione": 1,
       "squadra": "R.G.S.FRANC.A",
-      "punti": 21,
-      "giocate": 8,
-      "vinte": 7,
+      "punti": 24,
+      "giocate": 9,
+      "vinte": 8,
       "pareggiate": 0,
       "perse": 1,
       "penalita": 0,
-      "gol_fatti": 56,
-      "gol_subiti": 20,
-      "ufficiosa": false
+      "gol_fatti": 66,
+      "gol_subiti": 25,
+      "ufficiosa": true
     },
     {
       "posizione": 2,
       "squadra": "U.S. CIGOLESE",
-      "punti": 17,
-      "giocate": 8,
-      "vinte": 5,
+      "punti": 20,
+      "giocate": 9,
+      "vinte": 6,
       "pareggiate": 2,
       "perse": 1,
       "penalita": 0,
-      "gol_fatti": 28,
-      "gol_subiti": 16,
-      "ufficiosa": false
+      "gol_fatti": 33,
+      "gol_subiti": 18,
+      "ufficiosa": true
     },
     {
       "posizione": 3,
@@ -2832,27 +2832,27 @@ window.DATI = {
       "posizione": 8,
       "squadra": "SG CASAGLIA",
       "punti": 10,
-      "giocate": 8,
+      "giocate": 9,
       "vinte": 3,
       "pareggiate": 1,
-      "perse": 4,
+      "perse": 5,
       "penalita": 0,
-      "gol_fatti": 34,
-      "gol_subiti": 33,
-      "ufficiosa": false
+      "gol_fatti": 39,
+      "gol_subiti": 43,
+      "ufficiosa": true
     },
     {
       "posizione": 9,
       "squadra": "OR. CAPRIANO",
       "punti": 10,
-      "giocate": 8,
+      "giocate": 9,
       "vinte": 2,
       "pareggiate": 4,
-      "perse": 2,
+      "perse": 3,
       "penalita": 0,
-      "gol_fatti": 31,
-      "gol_subiti": 33,
-      "ufficiosa": false
+      "gol_fatti": 33,
+      "gol_subiti": 38,
+      "ufficiosa": true
     },
     {
       "posizione": 10,
