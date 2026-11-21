@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-20T21:53:59Z",
+  "aggiornato": "2026-11-21T01:15:49Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -869,11 +869,11 @@ window.DATI = {
       "data": "20/11/2026",
       "ora": "21:00",
       "codice": "2026101AA0902",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 2,
+      "gol_ospite": 6,
+      "ufficioso": true,
       "spostata": false,
-      "campo": "ORATORIO GAMBARA VIA BAZZONI - GAMBARA BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -918,7 +918,7 @@ window.DATI = {
       "gol_ospite": null,
       "ufficioso": false,
       "spostata": false,
-      "campo": "ORAT S GIUSTINA MONTICH VIA SANTA GIUSTINA - MONTICHIARI BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -933,7 +933,7 @@ window.DATI = {
       "gol_ospite": null,
       "ufficioso": false,
       "spostata": false,
-      "campo": "CAMPO OR. SAN DOMENICO SAVIO VIA DELLO STADIO 1 - CAPRIANO DEL COLLE BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -948,7 +948,7 @@ window.DATI = {
       "gol_ospite": 3,
       "ufficioso": true,
       "spostata": false,
-      "campo": "ORATORIO CORZANO VIA ALCIDE DE GASPERI - CORZANO BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -2778,6 +2778,19 @@ window.DATI = {
     },
     {
       "posizione": 4,
+      "squadra": "CASTELNUOVO 05",
+      "punti": 16,
+      "giocate": 9,
+      "vinte": 5,
+      "pareggiate": 1,
+      "perse": 3,
+      "penalita": 0,
+      "gol_fatti": 49,
+      "gol_subiti": 48,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 5,
       "squadra": "VEROLAVECCHIA",
       "punti": 15,
       "giocate": 8,
@@ -2790,33 +2803,33 @@ window.DATI = {
       "ufficiosa": true
     },
     {
-      "posizione": 5,
-      "squadra": "CASTELNUOVO 05",
-      "punti": 13,
-      "giocate": 8,
-      "vinte": 4,
-      "pareggiate": 1,
-      "perse": 3,
-      "penalita": 0,
-      "gol_fatti": 43,
-      "gol_subiti": 46,
-      "ufficiosa": false
-    },
-    {
       "posizione": 6,
-      "squadra": "ASD SAN PAOLO",
-      "punti": 11,
-      "giocate": 8,
+      "squadra": "CSI CORZANO",
+      "punti": 12,
+      "giocate": 9,
       "vinte": 3,
-      "pareggiate": 2,
+      "pareggiate": 3,
       "perse": 3,
       "penalita": 0,
-      "gol_fatti": 29,
-      "gol_subiti": 40,
+      "gol_fatti": 45,
+      "gol_subiti": 49,
       "ufficiosa": true
     },
     {
       "posizione": 7,
+      "squadra": "ASD SAN PAOLO",
+      "punti": 11,
+      "giocate": 9,
+      "vinte": 3,
+      "pareggiate": 2,
+      "perse": 4,
+      "penalita": 0,
+      "gol_fatti": 32,
+      "gol_subiti": 46,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 8,
       "squadra": "SG CASAGLIA",
       "punti": 10,
       "giocate": 8,
@@ -2829,7 +2842,7 @@ window.DATI = {
       "ufficiosa": false
     },
     {
-      "posizione": 8,
+      "posizione": 9,
       "squadra": "OR. CAPRIANO",
       "punti": 10,
       "giocate": 8,
@@ -2839,19 +2852,6 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 31,
       "gol_subiti": 33,
-      "ufficiosa": false
-    },
-    {
-      "posizione": 9,
-      "squadra": "CSI CORZANO",
-      "punti": 9,
-      "giocate": 8,
-      "vinte": 2,
-      "pareggiate": 3,
-      "perse": 3,
-      "penalita": 0,
-      "gol_fatti": 39,
-      "gol_subiti": 46,
       "ufficiosa": false
     },
     {
@@ -2871,14 +2871,14 @@ window.DATI = {
       "posizione": 11,
       "squadra": "GAMBARA 025",
       "punti": 7,
-      "giocate": 8,
+      "giocate": 9,
       "vinte": 2,
       "pareggiate": 1,
-      "perse": 5,
+      "perse": 6,
       "penalita": 0,
-      "gol_fatti": 31,
-      "gol_subiti": 45,
-      "ufficiosa": false
+      "gol_fatti": 33,
+      "gol_subiti": 51,
+      "ufficiosa": true
     },
     {
       "posizione": 12,
