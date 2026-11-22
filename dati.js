@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-22T01:11:44Z",
+  "aggiornato": "2026-11-22T09:52:43Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -854,9 +854,9 @@ window.DATI = {
       "data": "21/11/2026",
       "ora": "19:00",
       "codice": "2026101AA0901",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 6,
+      "gol_ospite": 2,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -2817,6 +2817,19 @@ window.DATI = {
     },
     {
       "posizione": 7,
+      "squadra": "AUDAX BORGO",
+      "punti": 12,
+      "giocate": 9,
+      "vinte": 4,
+      "pareggiate": 0,
+      "perse": 5,
+      "penalita": 0,
+      "gol_fatti": 37,
+      "gol_subiti": 42,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 8,
       "squadra": "ASD SAN PAOLO",
       "punti": 11,
       "giocate": 9,
@@ -2829,7 +2842,7 @@ window.DATI = {
       "ufficiosa": true
     },
     {
-      "posizione": 8,
+      "posizione": 9,
       "squadra": "SG CASAGLIA",
       "punti": 10,
       "giocate": 9,
@@ -2842,7 +2855,7 @@ window.DATI = {
       "ufficiosa": true
     },
     {
-      "posizione": 9,
+      "posizione": 10,
       "squadra": "OR. CAPRIANO",
       "punti": 10,
       "giocate": 9,
@@ -2853,19 +2866,6 @@ window.DATI = {
       "gol_fatti": 33,
       "gol_subiti": 38,
       "ufficiosa": true
-    },
-    {
-      "posizione": 10,
-      "squadra": "AUDAX BORGO",
-      "punti": 9,
-      "giocate": 8,
-      "vinte": 3,
-      "pareggiate": 0,
-      "perse": 5,
-      "penalita": 0,
-      "gol_fatti": 31,
-      "gol_subiti": 40,
-      "ufficiosa": false
     },
     {
       "posizione": 11,
@@ -2897,14 +2897,14 @@ window.DATI = {
       "posizione": 13,
       "squadra": "CORTICELLESE",
       "punti": 6,
-      "giocate": 8,
+      "giocate": 9,
       "vinte": 1,
       "pareggiate": 3,
-      "perse": 4,
+      "perse": 5,
       "penalita": 0,
-      "gol_fatti": 24,
-      "gol_subiti": 28,
-      "ufficiosa": false
+      "gol_fatti": 26,
+      "gol_subiti": 34,
+      "ufficiosa": true
     },
     {
       "posizione": 14,
