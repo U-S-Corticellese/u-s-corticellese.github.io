@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-22T09:52:43Z",
+  "aggiornato": "2026-11-23T07:40:44Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -884,9 +884,9 @@ window.DATI = {
       "data": "21/11/2026",
       "ora": "20:30",
       "codice": "2026101AA0903",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 1,
+      "gol_ospite": 9,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -2766,15 +2766,15 @@ window.DATI = {
     {
       "posizione": 3,
       "squadra": "JOLLY ORZI A",
-      "punti": 16,
-      "giocate": 8,
-      "vinte": 5,
+      "punti": 19,
+      "giocate": 9,
+      "vinte": 6,
       "pareggiate": 1,
       "perse": 2,
       "penalita": 0,
-      "gol_fatti": 29,
-      "gol_subiti": 21,
-      "ufficiosa": false
+      "gol_fatti": 38,
+      "gol_subiti": 22,
+      "ufficiosa": true
     },
     {
       "posizione": 4,
@@ -2884,14 +2884,14 @@ window.DATI = {
       "posizione": 12,
       "squadra": "VILLAUNITED",
       "punti": 6,
-      "giocate": 7,
+      "giocate": 8,
       "vinte": 2,
       "pareggiate": 0,
-      "perse": 5,
+      "perse": 6,
       "penalita": 0,
-      "gol_fatti": 27,
-      "gol_subiti": 36,
-      "ufficiosa": false
+      "gol_fatti": 28,
+      "gol_subiti": 45,
+      "ufficiosa": true
     },
     {
       "posizione": 13,
