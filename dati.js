@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-23T07:40:44Z",
+  "aggiornato": "2026-11-25T01:21:41Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -899,11 +899,11 @@ window.DATI = {
       "data": "24/11/2026",
       "ora": "20:45",
       "codice": "2026101AA0904",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 8,
+      "gol_ospite": 3,
+      "ufficioso": true,
       "spostata": false,
-      "campo": "ORAT. VEROLAVECCHIA VIA VITTORIO VENETO - VEROLAVECCHIA BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -2778,6 +2778,19 @@ window.DATI = {
     },
     {
       "posizione": 4,
+      "squadra": "VEROLAVECCHIA",
+      "punti": 18,
+      "giocate": 9,
+      "vinte": 5,
+      "pareggiate": 3,
+      "perse": 1,
+      "penalita": 0,
+      "gol_fatti": 44,
+      "gol_subiti": 31,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 5,
       "squadra": "CASTELNUOVO 05",
       "punti": 16,
       "giocate": 9,
@@ -2787,19 +2800,6 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 49,
       "gol_subiti": 48,
-      "ufficiosa": true
-    },
-    {
-      "posizione": 5,
-      "squadra": "VEROLAVECCHIA",
-      "punti": 15,
-      "giocate": 8,
-      "vinte": 4,
-      "pareggiate": 3,
-      "perse": 1,
-      "penalita": 0,
-      "gol_fatti": 36,
-      "gol_subiti": 28,
       "ufficiosa": true
     },
     {
@@ -2910,14 +2910,14 @@ window.DATI = {
       "posizione": 14,
       "squadra": "ASD CIVIDALE",
       "punti": 4,
-      "giocate": 7,
+      "giocate": 8,
       "vinte": 1,
       "pareggiate": 1,
-      "perse": 5,
+      "perse": 6,
       "penalita": 0,
-      "gol_fatti": 16,
-      "gol_subiti": 22,
-      "ufficiosa": false
+      "gol_fatti": 19,
+      "gol_subiti": 30,
+      "ufficiosa": true
     }
   ]
 };
