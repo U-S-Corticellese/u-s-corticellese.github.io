@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-25T01:21:41Z",
+  "aggiornato": "2026-11-25T22:01:45Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -316,7 +316,7 @@ window.DATI = {
       "codice": "2026101AA0307",
       "gol_casa": 8,
       "gol_ospite": 1,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -856,7 +856,7 @@ window.DATI = {
       "codice": "2026101AA0901",
       "gol_casa": 6,
       "gol_ospite": 2,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -871,7 +871,7 @@ window.DATI = {
       "codice": "2026101AA0902",
       "gol_casa": 2,
       "gol_ospite": 6,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -886,7 +886,7 @@ window.DATI = {
       "codice": "2026101AA0903",
       "gol_casa": 1,
       "gol_ospite": 9,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -916,7 +916,7 @@ window.DATI = {
       "codice": "2026101AA0905",
       "gol_casa": 10,
       "gol_ospite": 5,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -931,7 +931,7 @@ window.DATI = {
       "codice": "2026101AA0906",
       "gol_casa": 2,
       "gol_ospite": 5,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -946,7 +946,7 @@ window.DATI = {
       "codice": "2026101AA0907",
       "gol_casa": 6,
       "gol_ospite": 3,
-      "ufficioso": true,
+      "ufficioso": false,
       "spostata": false,
       "campo": null
     },
@@ -2748,7 +2748,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 66,
       "gol_subiti": 25,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 2,
@@ -2761,7 +2761,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 33,
       "gol_subiti": 18,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 3,
@@ -2774,7 +2774,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 38,
       "gol_subiti": 22,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 4,
@@ -2800,7 +2800,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 49,
       "gol_subiti": 48,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 6,
@@ -2813,7 +2813,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 45,
       "gol_subiti": 49,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 7,
@@ -2826,7 +2826,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 37,
       "gol_subiti": 42,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 8,
@@ -2839,7 +2839,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 32,
       "gol_subiti": 46,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 9,
@@ -2852,7 +2852,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 39,
       "gol_subiti": 43,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 10,
@@ -2865,7 +2865,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 33,
       "gol_subiti": 38,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 11,
@@ -2878,7 +2878,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 33,
       "gol_subiti": 51,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 12,
@@ -2891,7 +2891,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 28,
       "gol_subiti": 45,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 13,
@@ -2904,7 +2904,7 @@ window.DATI = {
       "penalita": 0,
       "gol_fatti": 26,
       "gol_subiti": 34,
-      "ufficiosa": true
+      "ufficiosa": false
     },
     {
       "posizione": 14,
