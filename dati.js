@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-25T22:01:45Z",
+  "aggiornato": "2026-11-27T01:25:30Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -1049,11 +1049,11 @@ window.DATI = {
       "data": "26/11/2026",
       "ora": "21:00",
       "codice": "2026101AA1007",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
-      "spostata": true,
-      "campo": "CENTRO SPORTIVO OFFLAGA (BS) VIA FE' D'OSTIANI - OFFLAGA BS"
+      "gol_casa": 2,
+      "gol_ospite": 1,
+      "ufficioso": true,
+      "spostata": false,
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -2804,6 +2804,19 @@ window.DATI = {
     },
     {
       "posizione": 6,
+      "squadra": "ASD SAN PAOLO",
+      "punti": 14,
+      "giocate": 10,
+      "vinte": 4,
+      "pareggiate": 2,
+      "perse": 4,
+      "penalita": 0,
+      "gol_fatti": 34,
+      "gol_subiti": 47,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 7,
       "squadra": "CSI CORZANO",
       "punti": 12,
       "giocate": 9,
@@ -2816,30 +2829,17 @@ window.DATI = {
       "ufficiosa": false
     },
     {
-      "posizione": 7,
+      "posizione": 8,
       "squadra": "AUDAX BORGO",
       "punti": 12,
-      "giocate": 9,
+      "giocate": 10,
       "vinte": 4,
       "pareggiate": 0,
-      "perse": 5,
+      "perse": 6,
       "penalita": 0,
-      "gol_fatti": 37,
-      "gol_subiti": 42,
-      "ufficiosa": false
-    },
-    {
-      "posizione": 8,
-      "squadra": "ASD SAN PAOLO",
-      "punti": 11,
-      "giocate": 9,
-      "vinte": 3,
-      "pareggiate": 2,
-      "perse": 4,
-      "penalita": 0,
-      "gol_fatti": 32,
-      "gol_subiti": 46,
-      "ufficiosa": false
+      "gol_fatti": 38,
+      "gol_subiti": 44,
+      "ufficiosa": true
     },
     {
       "posizione": 9,
