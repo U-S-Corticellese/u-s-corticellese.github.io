@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-28T01:20:40Z",
+  "aggiornato": "2026-11-28T09:57:03Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -959,9 +959,9 @@ window.DATI = {
       "data": "27/11/2026",
       "ora": "20:30",
       "codice": "2026101AA1001",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 8,
+      "gol_ospite": 2,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -989,9 +989,9 @@ window.DATI = {
       "data": "27/11/2026",
       "ora": "21:00",
       "codice": "2026101AA1003",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 3,
+      "gol_ospite": 2,
+      "ufficioso": true,
       "spostata": false,
       "campo": null
     },
@@ -2741,27 +2741,27 @@ window.DATI = {
       "posizione": 1,
       "squadra": "R.G.S.FRANC.A",
       "punti": 24,
-      "giocate": 9,
+      "giocate": 10,
       "vinte": 8,
       "pareggiate": 0,
-      "perse": 1,
+      "perse": 2,
       "penalita": 0,
-      "gol_fatti": 66,
-      "gol_subiti": 25,
-      "ufficiosa": false
+      "gol_fatti": 68,
+      "gol_subiti": 28,
+      "ufficiosa": true
     },
     {
       "posizione": 2,
       "squadra": "U.S. CIGOLESE",
-      "punti": 20,
-      "giocate": 9,
-      "vinte": 6,
+      "punti": 23,
+      "giocate": 10,
+      "vinte": 7,
       "pareggiate": 2,
       "perse": 1,
       "penalita": 0,
-      "gol_fatti": 33,
-      "gol_subiti": 18,
-      "ufficiosa": false
+      "gol_fatti": 41,
+      "gol_subiti": 20,
+      "ufficiosa": true
     },
     {
       "posizione": 3,
@@ -2832,14 +2832,14 @@ window.DATI = {
       "posizione": 8,
       "squadra": "CSI CORZANO",
       "punti": 12,
-      "giocate": 9,
+      "giocate": 10,
       "vinte": 3,
       "pareggiate": 3,
-      "perse": 3,
+      "perse": 4,
       "penalita": 0,
-      "gol_fatti": 45,
-      "gol_subiti": 49,
-      "ufficiosa": false
+      "gol_fatti": 47,
+      "gol_subiti": 57,
+      "ufficiosa": true
     },
     {
       "posizione": 9,
@@ -2882,6 +2882,19 @@ window.DATI = {
     },
     {
       "posizione": 12,
+      "squadra": "ASD CIVIDALE",
+      "punti": 7,
+      "giocate": 9,
+      "vinte": 2,
+      "pareggiate": 1,
+      "perse": 6,
+      "penalita": 0,
+      "gol_fatti": 22,
+      "gol_subiti": 32,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 13,
       "squadra": "VILLAUNITED",
       "punti": 6,
       "giocate": 8,
@@ -2894,7 +2907,7 @@ window.DATI = {
       "ufficiosa": false
     },
     {
-      "posizione": 13,
+      "posizione": 14,
       "squadra": "CORTICELLESE",
       "punti": 6,
       "giocate": 9,
@@ -2905,19 +2918,6 @@ window.DATI = {
       "gol_fatti": 26,
       "gol_subiti": 34,
       "ufficiosa": false
-    },
-    {
-      "posizione": 14,
-      "squadra": "ASD CIVIDALE",
-      "punti": 4,
-      "giocate": 8,
-      "vinte": 1,
-      "pareggiate": 1,
-      "perse": 6,
-      "penalita": 0,
-      "gol_fatti": 19,
-      "gol_subiti": 30,
-      "ufficiosa": true
     }
   ]
 };
