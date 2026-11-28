@@ -3,7 +3,7 @@ window.DATI = {
   "squadra": "CORTICELLESE",
   "campionato": "CSI Brescia · Calcio a 7 Open maschile · Serie A · Girone A",
   "fonte": "https://risultati.csi.brescia.it/albo/risultati-calendario-classifiche-squadre.html",
-  "aggiornato": "2026-11-27T01:25:30Z",
+  "aggiornato": "2026-11-28T01:20:40Z",
   "partite": [
     {
       "fase": "ANDATA",
@@ -963,7 +963,7 @@ window.DATI = {
       "gol_ospite": null,
       "ufficioso": false,
       "spostata": false,
-      "campo": "C.S. COMUNALE CIGOLE VIA DEI GELSI - CIGOLE BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -974,11 +974,11 @@ window.DATI = {
       "data": "27/11/2026",
       "ora": "20:30",
       "codice": "2026101AA1002",
-      "gol_casa": null,
-      "gol_ospite": null,
-      "ufficioso": false,
+      "gol_casa": 4,
+      "gol_ospite": 1,
+      "ufficioso": true,
       "spostata": false,
-      "campo": "PARROCCHIA TORBOLE CASAGLIA VIA DON SALVONI, 20 - TORBOLE CASAGLIA BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -993,7 +993,7 @@ window.DATI = {
       "gol_ospite": null,
       "ufficioso": false,
       "spostata": false,
-      "campo": "CAMPO SPORTIVO COMUNALE VIA GOITO 8 - CIVIDALE MANTOVANO MN"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -1023,7 +1023,7 @@ window.DATI = {
       "gol_ospite": null,
       "ufficioso": false,
       "spostata": false,
-      "campo": "ORATORIO FLERO VIA GIUSEPPE MAZZINI - FLERO BS"
+      "campo": null
     },
     {
       "fase": "ANDATA",
@@ -2817,6 +2817,19 @@ window.DATI = {
     },
     {
       "posizione": 7,
+      "squadra": "SG CASAGLIA",
+      "punti": 13,
+      "giocate": 10,
+      "vinte": 4,
+      "pareggiate": 1,
+      "perse": 5,
+      "penalita": 0,
+      "gol_fatti": 43,
+      "gol_subiti": 44,
+      "ufficiosa": true
+    },
+    {
+      "posizione": 8,
       "squadra": "CSI CORZANO",
       "punti": 12,
       "giocate": 9,
@@ -2829,7 +2842,7 @@ window.DATI = {
       "ufficiosa": false
     },
     {
-      "posizione": 8,
+      "posizione": 9,
       "squadra": "AUDAX BORGO",
       "punti": 12,
       "giocate": 10,
@@ -2842,30 +2855,17 @@ window.DATI = {
       "ufficiosa": true
     },
     {
-      "posizione": 9,
-      "squadra": "SG CASAGLIA",
-      "punti": 10,
-      "giocate": 9,
-      "vinte": 3,
-      "pareggiate": 1,
-      "perse": 5,
-      "penalita": 0,
-      "gol_fatti": 39,
-      "gol_subiti": 43,
-      "ufficiosa": false
-    },
-    {
       "posizione": 10,
       "squadra": "OR. CAPRIANO",
       "punti": 10,
-      "giocate": 9,
+      "giocate": 10,
       "vinte": 2,
       "pareggiate": 4,
-      "perse": 3,
+      "perse": 4,
       "penalita": 0,
-      "gol_fatti": 33,
-      "gol_subiti": 38,
-      "ufficiosa": false
+      "gol_fatti": 34,
+      "gol_subiti": 42,
+      "ufficiosa": true
     },
     {
       "posizione": 11,
